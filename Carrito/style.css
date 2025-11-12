@@ -2,13 +2,21 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #535152, #868684);
-  color: #333;
+  color: #FFFFFF;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 /* Título */
+h1 {
+  background-color: #1f1074;
+  color: white;
+  padding: 1rem;
+  border-bottom: 4px solid #306283;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
 h2 {
   background-color: #1f1074;
   color: white;
@@ -85,7 +93,7 @@ footer {
   border-top: 2px solid #000000;
 }
 
-#totalLikes {
+#total {
   font-size: 1.5rem;
-  color: #000000;
+  color: #4be025;
 }

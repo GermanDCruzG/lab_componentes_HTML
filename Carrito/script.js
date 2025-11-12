@@ -12,39 +12,39 @@
 // •Muestre un alert() con el mensaje "Carrito vaciado"
 
 alert("Bienvenido al E-commerce de Generation. Por favor, acepta para comenzar.");
-let precioProducto = 0
-const curso1 = 25
-const curso2 = 20
-const curso3 = 15
+const curso1 = 25;
+const curso2 = 20;
+const curso3 = 15;
+let total = 0;
 
-
-function Agregar(id) {
+function Agregar(id, precio) {
   alert("Se ha agregado tu producto al carrito!");
   let contadorA = document.getElementById(id);
   let carrito = parseInt(contadorA.innerText);
   carrito++;
   contadorA.innerText = carrito;
-  precioProducto += total;
-  console.log(`Total actual: $${total}`);
-  
+  total += precio;
+  document.getElementById("total").innerText = total;
   if (total > 50){  
     alert(`¡Envío gratis aplicado! $${total}`);
      }  
+     console.log(`Total actual: $${total}`);
 }
-function Quitar(id) {
+
+function Quitar(id, precio) {
   alert("Se ha quitado tu producto del carrito!");
   let contadorQ = document.getElementById(id);
   let carrito = parseInt(contadorQ.innerText);
   if (carrito > 0){  
     carrito--;
     contadorQ.innerText = carrito;
-    total -= precioProducto;
+    total -= precio;
+    document.getElementById("total").innerText = total;
     console.log(`Total actual: $${total}`);
     if (total === 0) {  
     alert("Tu carrito ha sido vaciado.");
   } 
 } 
-   
 }
 function Comprar() {
     if (total === 0){  
@@ -52,14 +52,17 @@ function Comprar() {
     } else { 
         alert(`Compra confirmada. Total: $${total}`);
         total = 0;
+        document.getElementById("contador").innerText = 0;
+        document.getElementById("total").innerText = total;
     }  
 }
 function Vaciar() {
-    
-  let contadorV = document.getElementById(id);
-  contadorV.innerText = 0;
+  document.getElementById("Contador1").innerText = 0;
+  document.getElementById("Contador2").innerText = 0;
+  document.getElementById("Contador3").innerText = 0;
   total = 0;
-  alert("Se ha vaciado tu carrito!");
-  console.log(`Total actual: $${total}`);
-  
+  document.getElementById("total").innerText = total;
+  alert("Se ha vaciado tu carrito!");   
 }
+
+  

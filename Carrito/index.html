@@ -8,27 +8,44 @@
 </head>
 <body>
     <div>      
-        <h2>E-commerce Generation</h2>
+        <h1>E-commerce Generation</h1>
         <p>Si te gusta alguno de los productos agrégalo al carrito:</p>   
         <div>
-        <p>Curso de Diseño Web $25: <span id ="Contador-producto1">0</span> 
-        <button onclick="Agregar('Contador-producto1')">Agregar</button> 
-        <button onclick="Quitar('Contador-producto1')">Quitar</button> 
+        <section class="productos">
+            <article class="producto">
+            <p>Curso de Diseño Web   <span id ="Contador1"> 0 </span>
+            <p>Precio: $25</p>
+            <button onclick="Agregar('Contador1', 25)">Agregar</button>
+            <button onclick="Quitar('Contador1', 25)">Quitar</button>
+            <!-- <p>En carrito: <span id="Contador1">0</span></p>   -->
+            </article>
+            </div>
+        
+            <div>
+            <article class="producto">   
+            <p>Curso de Javascript   <span id ="Contador2"> 0 </span>
+            <p>Precio: $20</p>   
+            <button onclick="Agregar('Contador2', 20)">Agregar</button> 
+            <button onclick="Quitar('Contador2', 20)">Quitar</button>
+            <!-- <p>En carrito: <span id="Contador2">0</span></p> -->
+            </article>
+            </div>
+        
+            <div>
+            <article class="producto"> 
+            <p>Curso de Bases de datos   <span id ="Contador3"> 0 </span>
+            <p>Precio: $15</p> 
+            <button onclick="Agregar('Contador3', 15)">Agregar</button>  
+            <button onclick="Quitar('Contador3', 15)">Quitar</button>
+            <!-- <p>En carrito: <span id="Contador3">0</span></p> -->
+            </article>
+        </section>
         </div>
-        <div>
-        <p>Curso de Javascript $20: <span id ="Contador-producto2">0</span>
-        <button onclick="Agregar('Contador-producto2')">Agregar</button> 
-        <button onclick="Quitar('Contador-producto2')">Quitar</button>
-        </div>
-        <div>
-        <p>Curso de Bases de datos $15: <span id ="Contador-producto3">0</span>  
-        <button onclick="Agregar('Contador-producto3')">Agregar</button>  
-        <button onclick="Quitar('Contador-producto3')">Quitar</button>
-        </div>
-        <div>
-        <p>Total carrito de compras: <span id ="Contador-total">0</span>  
-        <button onclick="Comprar('Contador-comprar')">Comprar</button>  
-        <button onclick="Vaciar('Contador-vaciar')">Vaciar</button>
+        
+        <div class="carrito">
+        <h2>Total del carrito: $<span id="total">0</span></h2>
+        <button onclick="Comprar()">Confirmar compra</button>  
+        <button onclick="Vaciar()">Vaciar carrito</button>       
         </div>
         
     </div>
