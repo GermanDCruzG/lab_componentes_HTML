@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -9,15 +10,18 @@
     <div>      
         <h2>Encuesta para desarrolladores Generation</h2>
         <p>Si te gusta alguna de las opciones por favor dale un like:</p>   
-
-        <p>Diseño Web: <span id ="Contador-likes">0</span>
-        <button onclick="Like()">Like</button>
+        <div>
+        <p>Diseño Web: <span id ="Contador-likes">0</span> 
+        <button onclick="Like('Contador-likes')">Like</button>          
+        </div>
+        <div>
         <p>Javascript: <span id ="Contador-likes1">0</span>
-        <button onclick="Like()">Like</button>
-        <p>Bases de datos: <span id ="Contador-likes2">0</span>
-        <button onclick="Like()">Like</button>
-        
-        
+        <button onclick="Like('Contador-likes1')">Like</button> 
+        </div>
+        <div>
+        <p>Bases de datos: <span id ="Contador-likes2">0</span>  
+        <button onclick="Like('Contador-likes2')">Like</button>             
+        </div>            
     </div>
     
     <script src="script.js"></script>

@@ -10,32 +10,18 @@
 // •Implementa un console.log() que muestre el total acumulado de votos cada 5 votos
 // registrados.
 
-alert("Bienvenido a esta encuesta. Por favor, acepte para comenzar.");
+alert("Bienvenido a esta encuesta. Por favor, acepta para comenzar.");
 
-function Like(){
-    alert("Gracias por tu like!");
-    let contadorLikes = document.getElementById("Contador-likes");
-    let likes = parseInt(contadorLikes.innerText);
-    likes += 1;
-    contadorLikes.innerText = likes;
-    console.log(`Nuevo like! Total: ${likes}`);
+function Like(id) {
+  alert("Gracias por tu like!");
+  let contador = document.getElementById(id);
+  let likes = parseInt(contador.innerText);
+  likes++;
+  contador.innerText = likes;
+  console.log(`Nuevo like! Total: ${likes}`);
+  if (likes % 5 === 0){  
+    alert(`Total de likes acumulado: ${likes}`);
+    console.log(`Total de likes acumulado: ${likes}`);
+  } else { 
+  }  
 }
-
-function Like1(){
-    alert("Gracias por tu like!");
-    let contadorLikes1 = document.getElementById("Contador-likes1");
-    let likes1 = parseInt(contadorLikes1.innerText);
-    likes1 += 1;
-    contadorLikes1.innerText = likes1;
-    console.log(`Nuevo like! Total: ${likes1}`);
-}
-
-function Like2(){
-    alert("Gracias por tu like!");
-    let contadorLikes2 = document.getElementById("Contador-likes2");
-    let likes2 = parseInt(contadorLikes2.innerText);
-    likes2 += 1;
-    contadorLikes2.innerText = likes2;
-    console.log(`Nuevo like! Total: ${likes2}`);
-}
-

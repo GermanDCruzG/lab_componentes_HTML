@@ -1,0 +1,91 @@
+/* Estilo general */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #535152, #868684);
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Título */
+h2 {
+  background-color: #1f1074;
+  color: white;
+  padding: 1rem;
+  border-bottom: 4px solid #306283;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Contenedor principal */
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 2rem;
+}
+
+/* Tarjetas */
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  width: 300px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Imágenes */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+button {
+  background-color: #1f1074;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #000000;
+  transform: scale(1.1);
+}
+
+/* Contadores */
+p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #FFFFFF;
+}
+
+span {
+  font-weight: bold;
+  color: #1f1074;
+}
+
+/* Total */
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #fff0f5;
+  border-top: 2px solid #000000;
+}
+
+#totalLikes {
+  font-size: 1.5rem;
+  color: #000000;
+}

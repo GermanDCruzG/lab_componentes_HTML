@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h2 onclick="alertFunction">Dale click aquí</h2>
-    <p id="red">Las manzanas son rojas</p>
-    <p>El mar es <span id="azul">azul</span></p>
-    <p>Las papas son cafés</p>
-
-
-
+    <div>      
+        <h2>E-commerce Generation</h2>
+        <p>Si te gusta alguno de los productos agrégalo al carrito:</p>   
+        <div>
+        <p>Curso de Diseño Web $25: <span id ="Contador-producto1">0</span> 
+        <button onclick="Agregar('Contador-producto1')">Agregar</button> 
+        <button onclick="Quitar('Contador-producto1')">Quitar</button> 
+        </div>
+        <div>
+        <p>Curso de Javascript $20: <span id ="Contador-producto2">0</span>
+        <button onclick="Agregar('Contador-producto2')">Agregar</button> 
+        <button onclick="Quitar('Contador-producto2')">Quitar</button>
+        </div>
+        <div>
+        <p>Curso de Bases de datos $15: <span id ="Contador-producto3">0</span>  
+        <button onclick="Agregar('Contador-producto3')">Agregar</button>  
+        <button onclick="Quitar('Contador-producto3')">Quitar</button>
+        </div>
+        <div>
+        <p>Total carrito de compras: <span id ="Contador-total">0</span>  
+        <button onclick="Comprar('Contador-comprar')">Comprar</button>  
+        <button onclick="Vaciar('Contador-vaciar')">Vaciar</button>
+        </div>
+        
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
